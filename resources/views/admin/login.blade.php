@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Admin</title>
   </head>
   <body>
@@ -19,13 +18,14 @@
               Admin Login
             </div>
             <div class="card-body">
+			
               <form action="{{ url('admin/login') }}" method="post">
                 @csrf
                 <label for="">Email</label>
                 <input required type="email" name="email" class="form-control">
                 <label for="">Password</label>
                 <input required type="text" name="password" class="form-control">
-                <button type="submit" class="btn bg-cyan-400 rounded hover:bg-cyan-600 mt-3">Login</button>
+                <button type="submit" class="btn btn-info mt-3">Login</button>
               </form>
             </div>
           </div>

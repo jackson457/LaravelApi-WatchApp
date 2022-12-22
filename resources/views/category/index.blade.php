@@ -13,7 +13,7 @@
        <form action="{{ route('category.destroy',$c->id) }}" method="post" class="d-inline" onsubmit="return confirm('sure')">
             @csrf
             @method('DELETE')
-            <input type="submit"  value="Delete" class="btn bg-red-400 hover:bg-red-700 btn-sm rounded">
+            <input type="submit"  value="Delete" class="btn btn-sm btn-danger rounded">
        </form>
         </td>
     </tr>

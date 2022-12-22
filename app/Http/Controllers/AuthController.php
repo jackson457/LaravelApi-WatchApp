@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\ViewErrorBag;
 class AuthController extends Controller
 {
     public function showLogin(){
@@ -16,12 +16,9 @@ class AuthController extends Controller
     public function postLogin(Request $req){
        $cred = $req->only('email','password');
        if(Auth::attempt($cred)){
-            if(auth()->user()->is_admin=='yes'){
-                return redirect('admin');
-            }
-            return redirect()->back();
+            return redirect('admin/category');
        }
-       return redirect()->back();
+       return redirect()->back()->with('error','email password wrong');
     }
     public function logout(){
         Auth::logout();

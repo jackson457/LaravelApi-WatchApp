@@ -1,4 +1,4 @@
 @extends('layout.master')
 @section('content')
-<h3>content</h3>
+<h1>content</h1>
 @endsection

@@ -6,6 +6,6 @@
     @method('PUT')
     <label for="Update name">Update Name</label>
     <input type="text" name="name" value="{{ $category->name }}" class="form-control" placeholdler="Enter update name">
-    <input type="submit" value="Update" name="submit" class="btn bg-pink-400 hover:bg-pink-600 mt-2 btn-sm rounded">
+    <input type="submit" value="Update" name="submit" class="btn btn-info mt-2 btn-sm rounded">
 </form>
 @endsection

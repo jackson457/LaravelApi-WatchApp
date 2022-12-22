@@ -15,6 +15,6 @@
         <input type="file" name="image" class="form-control" value={{ $watch->image }}>
         <label for="">Enter Description</label>
         <textarea name="description" id="" class="form-control" >{{ $watch->description }}</textarea>
-        <input type="submit" value="Submit" class="btn btn-sm bg-blue-300 hover:bg-cyan-500 mt-2">
+        <input type="submit" value="Submit" class="btn btn-sm btn-warning mt-2">
     </form>
 @endsection

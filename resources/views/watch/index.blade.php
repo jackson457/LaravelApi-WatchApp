@@ -19,7 +19,7 @@
        <form action="{{ route('watch.destroy',$c->id) }}" method="post" class="d-inline" onsubmit="return confirm('sure')">
             @csrf
             @method('DELETE')
-            <input type="submit"  value="Delete" class="btn bg-red-400 hover:bg-red-700 btn-sm rounded">
+            <input type="submit"  value="Delete" class="btn btn-danger btn-sm rounded">
        </form>
         </td>
     </tr>
